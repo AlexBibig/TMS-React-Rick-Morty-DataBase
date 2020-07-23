@@ -1,0 +1,25 @@
+.Character {
+    display: flex;
+}
+.imgBlock {
+    width: 30%;
+}
+.imgBlock img {
+    max-width: 100%;
+}
+.textBlock {
+    width: 70%;
+}
+.statusCircle {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(175, 214, 46);
+}
+.statusCircle.alive {
+    background-color: rgb(85, 204, 68);
+}
+.statusCircle.dead {
+    background-color: rgb(214, 61, 46);
+}

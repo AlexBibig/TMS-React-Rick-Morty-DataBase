@@ -2,12 +2,14 @@ import React from 'react';
 
 import './Character.css';
 import Api from '../../API';
+import { Link } from 'react-router-dom';
 
 export default class Character extends React.Component {
   rickMortyApi = new Api();
 
   state = {
     firstEpisodeName: null,
+    id: this.props.id,
   };
 
   componentDidMount() {
@@ -19,7 +21,7 @@ export default class Character extends React.Component {
   }
 
   render() {
-    const { name, img, status, species, gender, currentLocation, consoleLogInfo } = this.props;
+    const { name, img, status, species, gender, currentLocation } = this.props;
     const { firstEpisodeName } = this.state;
     let statusCircleClass = 'statusCircle';
 
@@ -36,7 +38,9 @@ export default class Character extends React.Component {
         </div>
         <div className='textBlock'>
           <div className='titleBlock'>
-            <p className='name'>{name}</p>
+            <p className='name'>
+              <Link to={`/character/${this.state.id}`}>{name}</Link>
+            </p>
             <p className='status'>
               <span className={statusCircleClass}></span>
               <span className='statusText'>{status}</span>
@@ -52,11 +56,6 @@ export default class Character extends React.Component {
           <div className='firstSeenBlock'>
             <p className='title'>First seen in:</p>
             <p className='firstEpisode'>{firstEpisodeName}</p>
-          </div>
-          <div className='btns_block'>
-            <button className='character_info' onClick={consoleLogInfo}>
-              Click for full info
-            </button>
           </div>
         </div>
       </div>

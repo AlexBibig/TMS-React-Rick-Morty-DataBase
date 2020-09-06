@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Api from '../../API';
 
-// здесь на хуках
-
 const CharacterPage = () => {
   const rickMortyApi = new Api();
 
@@ -29,10 +27,10 @@ const CharacterPage = () => {
   return (
     <div className='CharacterPage'>
       <h1>{name}</h1>
-      <div className='chararcterBlock'>
+      <div className='characterBlock'>
         <div>{gender}</div>
         <div>
-          <img src={image} alt={name} />
+          <img src={image} alt={`${name}`} />
         </div>
         <div>{species}</div>
       </div>

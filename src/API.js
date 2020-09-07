@@ -18,17 +18,13 @@ export default class Api {
   });
 
   getCharactersInfoByPage = async (pageNumber = null) => {
-    const response = pageNumber
-      ? await this.instance.get(`character/?page=${pageNumber}`)
-      : await this.instance.get('character');
+    const response = pageNumber ? await this.instance.get(`character/?page=${pageNumber}`) : await this.instance.get('character');
     const result = response.data;
     return result;
   };
 
   getEpisodesInfoByPage = async (pageNumber = null) => {
-    const response = pageNumber
-      ? await this.instance.get(`episode?page=${pageNumber}`)
-      : await this.instance.get('episode');
+    const response = pageNumber ? await this.instance.get(`episode?page=${pageNumber}`) : await this.instance.get('episode');
     const result = response.data;
     return result;
   };
@@ -46,6 +42,8 @@ export default class Api {
     this.instance.defaults.baseURL = 'https://rickandmortyapi.com/api/';
     return result;
   };
+
+  ///////////////////////////
 
   getEpisodes = async () => {
     const response = await this.instance.get(`episode?page=2`);

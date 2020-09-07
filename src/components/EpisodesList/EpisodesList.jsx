@@ -1,16 +1,38 @@
 import React from 'react';
-import Api from '../../API';
+// import './CharactersList.css';
+import Character from '../Character';
+import Episode from '../Episode';
+import { connect } from 'react-redux';
+import Paginator from '../Paginator';
 
-const EpisodesList = () => {
-  const rickMortyApi = new Api();
+class EpisodesList extends React.Component {
+  render() {
+    const { episodes } = this.props;
 
-  async function getEpisodes() {
-    const episodes = await rickMortyApi.getEpisodesInfoByPage(2);
-    console.log(episodes);
+    const items = episodes.map((item) => {
+      return (
+        <li key={item.id}>
+          <Episode name={item.name} />
+        </li>
+      );
+    });
+
+    return (
+      <>
+        <div className='CharactersList'>
+          <h1>Episodes</h1>
+          <ul>{items}</ul>
+        </div>
+        <Paginator />
+      </>
+    );
   }
-  getEpisodes();
+}
 
-  return <div className='EpisodesList'>EpisodesList</div>;
+const mapStateToProps = (state) => {
+  return {
+    episodes: state.episodes,
+  };
 };
 
-export default EpisodesList;
+export default connect(mapStateToProps)(EpisodesList);

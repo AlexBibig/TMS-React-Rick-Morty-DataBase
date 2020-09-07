@@ -1,29 +1,29 @@
 import React from 'react';
-import Episode from '../Episode';
+import Location from '../Location';
 import { connect } from 'react-redux';
 import Paginator from '../Paginator';
 import Spinner from '../Spinner';
 
-class EpisodesList extends React.Component {
+class LocationsList extends React.Component {
   render() {
-    const { episodes } = this.props;
+    const { locations } = this.props;
 
-    const items = episodes.map((item) => {
+    const items = locations.map((item) => {
       return (
         <li key={item.id}>
-          <Episode name={item.name} air_date={item.air_date} episode={item.episode} />
+          <Location id={item.id} name={item.name} />
         </li>
       );
     });
 
-    if (!episodes.length) {
+    if (!locations.length) {
       return <Spinner />;
     }
 
     return (
       <>
-        <div className='EpisodesList'>
-          <h1>Episodes</h1>
+        <div className='LocationsList'>
+          <h1>Locations</h1>
           <ul>{items}</ul>
         </div>
         <Paginator />
@@ -34,8 +34,8 @@ class EpisodesList extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    episodes: state.episodes,
+    locations: state.locations,
   };
 };
 
-export default connect(mapStateToProps)(EpisodesList);
+export default connect(mapStateToProps)(LocationsList);

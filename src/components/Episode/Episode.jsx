@@ -1,26 +1,20 @@
 import React from 'react';
 import '../Character/Character.css';
 import { Link } from 'react-router-dom';
-import Api from '../../API';
 
 export default class Episode extends React.Component {
   render() {
-    const { name, id } = this.props;
-
-    const rickMortyApi = new Api();
-    async function getEpisodes() {
-      const episodes = await rickMortyApi.getEpisodesInfoByPage(1);
-      console.log(episodes);
-    }
-    getEpisodes();
+    const { name, id, air_date, episode } = this.props;
 
     return (
       <div className='Episode'>
         <div className='textBlock'>
-          <div className='titleBlock'>
+          <div className='one_episode'>
             <p className='name'>
               <Link to={`/Episode/${id}`}>{name}</Link>
             </p>
+            <p className='air_date'>Release date: {air_date}</p>
+            <p className='episode_number'>Episode number: {episode}</p>
           </div>
         </div>
       </div>

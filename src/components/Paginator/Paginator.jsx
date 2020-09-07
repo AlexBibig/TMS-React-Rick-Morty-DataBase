@@ -1,25 +1,15 @@
-import React from "react";
-import { connect } from "react-redux";
-import { setCharactersThunk } from "../../actions/setCharectersAction";
+import React from 'react';
+import { connect } from 'react-redux';
+import { setCharactersThunk } from '../../actions/setCharectersAction';
+import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 
 const Paginator = (props) => {
-  const {
-    nextPageUrl,
-    prevPageUrl,
-    currentPage,
-    pageCount,
-    getNextPage,
-    getPrevPage,
-  } = props;
+  const { nextPageUrl, prevPageUrl, currentPage, pageCount, getNextPage, getPrevPage } = props;
   return (
-    <div className="Paginator">
-      {prevPageUrl && (
-        <button onClick={() => getPrevPage(prevPageUrl)}>prevBtn</button>
-      )}
+    <div className='Paginator'>
+      {prevPageUrl && <button onClick={() => getPrevPage(prevPageUrl)}>prevBtn</button>}
       <span>{currentPage}</span>
-      {nextPageUrl && (
-        <button onClick={() => getNextPage(nextPageUrl)}>nextBtn</button>
-      )}
+      {nextPageUrl && <button onClick={() => getNextPage(nextPageUrl)}>nextBtn</button>}
     </div>
   );
 };
@@ -32,8 +22,10 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getNextPage: (nextPageUrl) => dispatch(setCharactersThunk(nextPageUrl)),
-  getPrevPage: (prevPageUrl) => dispatch(setCharactersThunk(prevPageUrl)),
+  getNextPage: (nextPageUrl) =>
+    dispatch(setCharactersThunk(nextPageUrl), setEpisodesThunk(nextPageUrl)),
+  getPrevPage: (prevPageUrl) =>
+    dispatch(setCharactersThunk(prevPageUrl), setEpisodesThunk(prevPageUrl)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Paginator);

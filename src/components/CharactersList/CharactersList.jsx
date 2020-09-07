@@ -1,9 +1,9 @@
-import React from "react";
-import "./CharactersList.css";
-import Character from "../Character";
-import { connect } from "react-redux";
-import Spinner from "../Spinner";
-import Paginator from "../Paginator";
+import React from 'react';
+import './CharactersList.css';
+import Character from '../Character';
+import { connect } from 'react-redux';
+import Spinner from '../Spinner';
+import Paginator from '../Paginator';
 
 class CharactersList extends React.Component {
   render() {
@@ -33,7 +33,7 @@ class CharactersList extends React.Component {
 
     return (
       <>
-        <div className="CharactersList">
+        <div className='CharactersList'>
           <h1>Characters</h1>
           <ul>{items}</ul>
         </div>

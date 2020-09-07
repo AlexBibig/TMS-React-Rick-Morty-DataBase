@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './Nav.styles';
 import { setCharactersThunk } from '../../actions/setCharectersAction';
 import { setEpisodesThunk } from '../../actions/setEpisodesAction';
+import { setLocationsThunk } from '../../actions/setLocationsAction';
 import { connect } from 'react-redux';
 
 const Nav = (props) => {
@@ -17,7 +18,9 @@ const Nav = (props) => {
       <Link onClick={() => props.setEpisodes()} to='/episodes'>
         Episodes
       </Link>
-      <Link to='/locations'>Locations</Link>
+      <Link onClick={() => props.setLocations()} to='/locations'>
+        Locations
+      </Link>
     </div>
   );
 };
@@ -25,6 +28,7 @@ const Nav = (props) => {
 const mapDispatchToProps = (dispatch) => ({
   setCharacters: () => dispatch(setCharactersThunk()),
   setEpisodes: () => dispatch(setEpisodesThunk()),
+  setLocations: () => dispatch(setLocationsThunk()),
 });
 
 export default connect(null, mapDispatchToProps)(Nav);

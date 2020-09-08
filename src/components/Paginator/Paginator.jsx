@@ -23,7 +23,9 @@ const Paginator = (props) => {
     return (
       <div className='Paginator'>
         {prevPageUrl && <button onClick={() => getPrevEpisodePage(prevPageUrl)}>prevBtn</button>}
-        <span>{currentPage}</span>
+        <span>
+          {currentPage} page of {pageCount}
+        </span>
         {nextPageUrl && <button onClick={() => getNextEpisodePage(nextPageUrl)}>nextBtn</button>}
       </div>
     );
@@ -31,7 +33,9 @@ const Paginator = (props) => {
     return (
       <div className='Paginator'>
         {prevPageUrl && <button onClick={() => getPrevLocationPage(prevPageUrl)}>prevBtn</button>}
-        <span>{currentPage}</span>
+        <span>
+          {currentPage} page of {pageCount}
+        </span>
         {nextPageUrl && <button onClick={() => getNextLocationPage(nextPageUrl)}>nextBtn</button>}
       </div>
     );
@@ -39,7 +43,9 @@ const Paginator = (props) => {
     return (
       <div className='Paginator'>
         {prevPageUrl && <button onClick={() => getPrevCharacterPage(prevPageUrl)}>prevBtn</button>}
-        <span>{currentPage}</span>
+        <span>
+          {currentPage} page of {pageCount}
+        </span>
         {nextPageUrl && <button onClick={() => getNextCharacterPage(nextPageUrl)}>nextBtn</button>}
       </div>
     );

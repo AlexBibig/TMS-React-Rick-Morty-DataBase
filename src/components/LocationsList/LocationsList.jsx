@@ -7,6 +7,7 @@ import Spinner from '../Spinner';
 class LocationsList extends React.Component {
   render() {
     const { locations } = this.props;
+    const pageMover = 'locations';
 
     const items = locations.map((item) => {
       return (
@@ -26,7 +27,7 @@ class LocationsList extends React.Component {
           <h1>Locations</h1>
           <ul>{items}</ul>
         </div>
-        <Paginator />
+        <Paginator pageMover={pageMover} />
       </>
     );
   }

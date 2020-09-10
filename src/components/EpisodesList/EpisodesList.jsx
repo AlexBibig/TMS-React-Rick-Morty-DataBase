@@ -12,7 +12,7 @@ class EpisodesList extends React.Component {
     const items = episodes.map((item) => {
       return (
         <li key={item.id}>
-          <Episode name={item.name} air_date={item.air_date} episode={item.episode} />
+          <Episode id={item.id} name={item.name} air_date={item.air_date} episode={item.episode} />
         </li>
       );
     });

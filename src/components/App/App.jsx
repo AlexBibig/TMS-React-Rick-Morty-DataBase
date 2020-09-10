@@ -17,17 +17,17 @@ const App = () => {
           <Route path='/characters'>
             <CharactersList />
           </Route>
-          <Route path='/episodes'>
-            <EpisodesList />
-          </Route>
-          <Route path='/locations'>
-            <LocationsList />
-          </Route>
           <Route path={`/character/:id`}>
             <CharacterPage />
           </Route>
+          <Route path='/episodes'>
+            <EpisodesList />
+          </Route>
           <Route path={`/episode/:id`}>
             <EpisodePage />
+          </Route>
+          <Route path='/locations'>
+            <LocationsList />
           </Route>
         </Switch>
       </div>

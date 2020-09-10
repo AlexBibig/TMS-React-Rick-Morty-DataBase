@@ -11,10 +11,11 @@ export default class Episode extends React.Component {
         <div className='textBlock'>
           <div className='one_episode'>
             <p className='name'>
-              <Link to={`/Episode/${id}`}>{name}</Link>
+              <Link to={`/episode/${id}`}>{name}</Link>
             </p>
             <p className='air_date'>Release date: {air_date}</p>
             <p className='episode_number'>Episode number: {episode}</p>
+            <p className='episode_number'>Episode number: {id}</p>
           </div>
         </div>
       </div>

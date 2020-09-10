@@ -8,6 +8,7 @@ import Paginator from '../Paginator';
 class CharactersList extends React.Component {
   render() {
     const { characters } = this.props;
+    console.log(characters);
 
     const items = characters.map((item) => {
       return (

@@ -18,25 +18,37 @@ export default class Api {
   });
 
   getCharactersInfoByPage = async (pageNumber = null) => {
-    const response = pageNumber ? await this.instance.get(`character/?page=${pageNumber}`) : await this.instance.get('character');
+    const response = pageNumber
+      ? await this.instance.get(`character/?page=${pageNumber}`)
+      : await this.instance.get('character');
     const result = response.data;
     return result;
   };
 
   getEpisodesInfoByPage = async (pageNumber = null) => {
-    const response = pageNumber ? await this.instance.get(`episode?page=${pageNumber}`) : await this.instance.get('episode');
+    const response = pageNumber
+      ? await this.instance.get(`episode?page=${pageNumber}`)
+      : await this.instance.get('episode');
     const result = response.data;
     return result;
   };
 
   getLocationsInfoByPage = async (pageNumber = null) => {
-    const response = pageNumber ? await this.instance.get(`location?page=${pageNumber}`) : await this.instance.get('location');
+    const response = pageNumber
+      ? await this.instance.get(`location?page=${pageNumber}`)
+      : await this.instance.get('location');
     const result = response.data;
     return result;
   };
 
   getCharacter = async (id) => {
     const response = await this.instance.get(`character/${id}`);
+    const result = response.data;
+    return result;
+  };
+
+  getMultipleCharacters = async (num) => {
+    const response = await this.instance.get(`character/${num}`);
     const result = response.data;
     return result;
   };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Api from '../../API';
-import { Link } from 'react-router-dom';
+import Spinner from '../Spinner';
 
 const CharacterPage = () => {
   const rickMortyApi = new Api();
@@ -16,7 +16,6 @@ const CharacterPage = () => {
   const [origin, setOrigin] = useState();
   const [location, setLocation] = useState();
   const [locationUrl, setLocationUrl] = useState();
-  const [episode, setEpisode] = useState();
   const [image, setImage] = useState();
 
   useEffect(() => {
@@ -30,12 +29,15 @@ const CharacterPage = () => {
       setOrigin(character.origin.name); //
       setLocation(character.location.name); //
       setLocationUrl(character.location.url); //
-      setEpisode(character.episode); //
       setImage(character.image);
     }
 
     getCharacter(id);
   }, [id, rickMortyApi]);
+
+  if (!name) {
+    return <Spinner />;
+  }
 
   return (
     <div className='CharacterPage'>
@@ -50,9 +52,6 @@ const CharacterPage = () => {
         <div>{status}</div>
         <div>{origin}</div>
         <div>{location}</div>
-        <p>
-          <Link to={`/episode/${id}`}>{episode}</Link>
-        </p>
       </div>
     </div>
   );

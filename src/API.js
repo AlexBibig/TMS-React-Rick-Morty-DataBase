@@ -66,4 +66,10 @@ export default class Api {
     this.instance.defaults.baseURL = 'https://rickandmortyapi.com/api/';
     return result;
   };
+
+  getLocation = async (id) => {
+    const response = await this.instance.get(`location/${id}`);
+    const result = response.data;
+    return result;
+  };
 }

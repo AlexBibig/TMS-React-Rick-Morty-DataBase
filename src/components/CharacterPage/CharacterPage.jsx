@@ -14,6 +14,7 @@ const CharacterPage = () => {
   const [type, setType] = useState();
   const [gender, setGender] = useState();
   const [origin, setOrigin] = useState();
+  const [originUrl, setOriginUrl] = useState();
   const [location, setLocation] = useState();
   const [locationUrl, setLocationUrl] = useState();
   const [image, setImage] = useState();
@@ -27,6 +28,7 @@ const CharacterPage = () => {
       setType(character.type);
       setGender(character.gender);
       setOrigin(character.origin.name); //
+      setOriginUrl(character.origin.url); //
       setLocation(character.location.name); //
       setLocationUrl(character.location.url); //
       setImage(character.image);

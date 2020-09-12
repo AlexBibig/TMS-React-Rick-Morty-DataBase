@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import Spinner from '../Spinner';
+import { Link } from 'react-router-dom';
 
 const CharacterPage = () => {
   const rickMortyApi = new Api();
@@ -14,9 +15,9 @@ const CharacterPage = () => {
   const [type, setType] = useState();
   const [gender, setGender] = useState();
   const [origin, setOrigin] = useState();
-  const [originUrl, setOriginUrl] = useState();
+  const [originUrl, setOriginUrl] = useState('');
   const [location, setLocation] = useState();
-  const [locationUrl, setLocationUrl] = useState();
+  const [locationUrl, setLocationUrl] = useState('');
   const [image, setImage] = useState();
 
   useEffect(() => {
@@ -37,6 +38,9 @@ const CharacterPage = () => {
     getCharacter(id);
   }, [id, rickMortyApi]);
 
+  let pageOriginId = originUrl.split('/')[5];
+  let pageLocationId = locationUrl.split('/')[5];
+
   if (!name) {
     return <Spinner />;
   }
@@ -52,8 +56,12 @@ const CharacterPage = () => {
         <div>{species}</div>
         <div>{type}</div>
         <div>{status}</div>
-        <div>{origin}</div>
-        <div>{location}</div>
+        <Link to={`/location/${pageOriginId}`}>
+          <h1>{origin}</h1>
+        </Link>
+        <Link to={`/location/${pageLocationId}`}>
+          <h1>{location}</h1>
+        </Link>
       </div>
     </div>
   );

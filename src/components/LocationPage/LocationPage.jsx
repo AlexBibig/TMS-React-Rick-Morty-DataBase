@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import LocationPageResidents from '../LocationPageResidents';
+import Spinner from '../Spinner';
 
 const LocationPage = () => {
   const rickMortyApi = new Api();
@@ -23,11 +24,13 @@ const LocationPage = () => {
     getLocation(id);
   }, [id]);
 
-  console.log(residents);
+  if (!name) {
+    return <Spinner />;
+  }
 
-  const items = residents.map((item) => {
+  const items = residents.map((item, index) => {
     return (
-      <li key={id}>
+      <li key={index}>
         <LocationPageResidents residentUrl={item} />
       </li>
     );

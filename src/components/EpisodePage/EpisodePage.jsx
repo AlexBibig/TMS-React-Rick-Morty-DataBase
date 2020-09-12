@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import EpisodePageCharacters from '../EpisodePageCharacters';
+import Spinner from '../Spinner';
 
 const EpisodePage = () => {
   const rickMortyApi = new Api();
@@ -23,11 +24,13 @@ const EpisodePage = () => {
     getEpisode(id);
   }, [id]);
 
-  console.log(characters);
+  if (!name) {
+    return <Spinner />;
+  }
 
-  const items = characters.map((item) => {
+  const items = characters.map((item, index) => {
     return (
-      <li key={id}>
+      <li key={index}>
         <EpisodePageCharacters characterUrl={item} />
       </li>
     );

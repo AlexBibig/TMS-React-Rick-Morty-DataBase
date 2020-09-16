@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { setCharactersThunk } from '../../actions/setCharectersAction';
 import { setEpisodesThunk } from '../../actions/setEpisodesAction';
 import { setLocationsThunk } from '../../actions/setLocationsAction';
+import styles from '../Paginator/Paginator.module.css';
 
 const Paginator = (props) => {
   const {
@@ -21,32 +22,80 @@ const Paginator = (props) => {
 
   if (pageMover === 'episodes') {
     return (
-      <div className='Paginator'>
-        {prevPageUrl && <button onClick={() => getPrevEpisodePage(prevPageUrl)}>prevBtn</button>}
+      <div className={`Paginator ${styles.Paginator}`}>
         <span>
           {currentPage} page of {pageCount}
         </span>
-        {nextPageUrl && <button onClick={() => getNextEpisodePage(nextPageUrl)}>nextBtn</button>}
+        <div className={`btns_block ${styles.btns_block}`}>
+          {prevPageUrl && (
+            <button
+              className={`prevBtn ${styles.prevBtn}`}
+              onClick={() => getPrevEpisodePage(prevPageUrl)}
+            >
+              Previous
+            </button>
+          )}
+          {nextPageUrl && (
+            <button
+              className={`nextBtn ${styles.nextBtn}`}
+              onClick={() => getNextEpisodePage(nextPageUrl)}
+            >
+              Next
+            </button>
+          )}
+        </div>
       </div>
     );
   } else if (pageMover === 'locations') {
     return (
-      <div className='Paginator'>
-        {prevPageUrl && <button onClick={() => getPrevLocationPage(prevPageUrl)}>prevBtn</button>}
+      <div className={`Paginator ${styles.Paginator}`}>
         <span>
           {currentPage} page of {pageCount}
         </span>
-        {nextPageUrl && <button onClick={() => getNextLocationPage(nextPageUrl)}>nextBtn</button>}
+        <div className={`btns_block ${styles.btns_block}`}>
+          {prevPageUrl && (
+            <button
+              className={`prevBtn ${styles.prevBtn}`}
+              onClick={() => getPrevLocationPage(prevPageUrl)}
+            >
+              Previous
+            </button>
+          )}
+          {nextPageUrl && (
+            <button
+              className={`nextBtn ${styles.nextBtn}`}
+              onClick={() => getNextLocationPage(nextPageUrl)}
+            >
+              Next
+            </button>
+          )}
+        </div>
       </div>
     );
   } else {
     return (
-      <div className='Paginator'>
-        {prevPageUrl && <button onClick={() => getPrevCharacterPage(prevPageUrl)}>prevBtn</button>}
+      <div className={`Paginator ${styles.Paginator}`}>
         <span>
           {currentPage} page of {pageCount}
         </span>
-        {nextPageUrl && <button onClick={() => getNextCharacterPage(nextPageUrl)}>nextBtn</button>}
+        <div className={`btns_block ${styles.btns_block}`}>
+          {prevPageUrl && (
+            <button
+              className={`prevBtn ${styles.prevBtn}`}
+              onClick={() => getPrevCharacterPage(prevPageUrl)}
+            >
+              Previous
+            </button>
+          )}
+          {nextPageUrl && (
+            <button
+              className={`nextBtn ${styles.nextBtn}`}
+              onClick={() => getNextCharacterPage(nextPageUrl)}
+            >
+              Next
+            </button>
+          )}
+        </div>
       </div>
     );
   }

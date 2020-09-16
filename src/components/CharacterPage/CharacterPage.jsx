@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import Spinner from '../Spinner';
 import { Link } from 'react-router-dom';
+import styles from '../CharacterPage/CharacterPage.module.css';
 
 const CharacterPage = () => {
   const rickMortyApi = new Api();
@@ -12,7 +13,6 @@ const CharacterPage = () => {
   const [name, setName] = useState();
   const [status, setStatus] = useState();
   const [species, setSpecies] = useState();
-  const [type, setType] = useState();
   const [gender, setGender] = useState();
   const [origin, setOrigin] = useState();
   const [originUrl, setOriginUrl] = useState('');
@@ -26,7 +26,6 @@ const CharacterPage = () => {
       setName(character.name);
       setStatus(character.status);
       setSpecies(character.species);
-      setType(character.type);
       setGender(character.gender);
       setOrigin(character.origin.name); //
       setOriginUrl(character.origin.url); //
@@ -46,22 +45,38 @@ const CharacterPage = () => {
   }
 
   return (
-    <div className='CharacterPage'>
-      <h1>{name}</h1>
-      <div className='characterBlock'>
-        <div>{gender}</div>
+    <div className={`CharacterPage ${styles.CharacterPage}`}>
+      <div className={`imageBlock ${styles.imageBlock}`}>
         <div>
           <img src={image} alt={`${name}`} />
         </div>
-        <div>{species}</div>
-        <div>{type}</div>
-        <div>{status}</div>
-        <Link to={`/location/${pageOriginId}`}>
-          <h1>{origin}</h1>
-        </Link>
-        <Link to={`/location/${pageLocationId}`}>
-          <h1>{location}</h1>
-        </Link>
+        <p>{name}</p>
+      </div>
+      <div className={`infoBlock ${styles.infoBlock}`}>
+        <div>
+          <span>Gender: </span>
+          <span>{gender}</span>
+        </div>
+        <div>
+          <span>Species: </span>
+          <span>{species}</span>
+        </div>
+        <div>
+          <span>Status: </span>
+          <span>{status}</span>
+        </div>
+        <div>
+          <span>Origin planet: </span>
+          <Link to={`/location/${pageOriginId}`}>
+            <span>{origin}</span>
+          </Link>
+        </div>
+        <div>
+          <span>Last known location: </span>
+          <Link to={`/location/${pageLocationId}`}>
+            <span>{location}</span>
+          </Link>
+        </div>
       </div>
     </div>
   );

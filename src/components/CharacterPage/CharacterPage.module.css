@@ -1,0 +1,32 @@
+.CharacterPage {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.CharacterPage .imageBlock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CharacterPage .imageBlock p {
+  font-family: 'rick&morty_font', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #009925;
+}
+
+.CharacterPage .infoBlock {
+  width: 55%;
+  padding: 100px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.CharacterPage .infoBlock div {
+  display: flex;
+  margin-bottom: 10px;
+}
+.CharacterPage .infoBlock div * {
+  width: 50%;
+}

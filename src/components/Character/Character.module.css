@@ -13,15 +13,30 @@
   max-height: 100%;
   border-radius: 50%;
 }
+
 .Character .textBlock {
-  width: 45%;
+  width: 55%;
+  padding: 10px;
 }
 .Character p {
   margin-bottom: 10px;
 }
 .Character .name {
   font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
+.Character .name a {
+  color: white;
+  text-decoration: none;
+  transition: 0.8s;
+}
+.Character .name a:hover {
+  color: #009925;
+  cursor: pointer;
+}
+
 .Character .statusCircle {
   display: inline-block;
   width: 9px;

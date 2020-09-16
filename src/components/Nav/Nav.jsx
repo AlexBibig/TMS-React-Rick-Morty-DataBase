@@ -10,13 +10,13 @@ const Nav = (props) => {
   return (
     <div className={`Nav ${styles.Nav}`}>
       <Link onClick={() => props.setCharacters()} to='/characters'>
-        characters
+        Characters
       </Link>
       <Link onClick={() => props.setEpisodes()} to='/episodes'>
-        episodes
+        Episodes
       </Link>
       <Link onClick={() => props.setLocations()} to='/locations'>
-        locations
+        Locations
       </Link>
     </div>
   );

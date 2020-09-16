@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 import Nav from '../Nav';
+import logo from '../../others/img/rrick-morty-logo.jpg';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <div className={`Header ${styles.Header}`}>
       <div className='title_block'>
         <Link className={styles.logo_link} to='/Main'>
-          Rick and Morty Database
+          <img src={logo} alt='logo' />
         </Link>
       </div>
       <div className='nav_block'>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default class Character extends React.Component {
   render() {
-    const { name, img, status, species, gender, currentLocation, firstEpisodeName, id } = this.props;
+    const { name, img, status, species, gender, firstEpisodeName, id } = this.props;
 
     let statusCircleClass = styles.statusCircle;
 
@@ -27,19 +27,18 @@ export default class Character extends React.Component {
             <div className='status'>
               <p>
                 <span className={`${statusCircleClass} `}></span>
-                <span className='statusText'>{status}</span>
+                <span className='statusText'> {status}</span>
               </p>
               <p>
-                <span className='species'>{species}</span>
+                Species: <b>{species}</b>
               </p>
               <p>
-                <span className='gender'>{gender}</span>
+                Gender: <b>{gender}</b>
+              </p>
+              <p>
+                First seen in: <b>{firstEpisodeName}</b>
               </p>
             </div>
-          </div>
-          <div className='firstSeenBlock'>
-            <p className='title'>First seen in: {firstEpisodeName}</p>
-            <p className='firstEpisode'></p>
           </div>
         </div>
       </div>

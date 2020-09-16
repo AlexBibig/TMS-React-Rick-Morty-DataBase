@@ -1,9 +1,0 @@
-ul {
-  list-style: none;
-}
-.CharactersList li {
-  display: inline-block;
-  width: 45%;
-  margin: 10px 10px;
-  background-color: blanchedalmond;
-}

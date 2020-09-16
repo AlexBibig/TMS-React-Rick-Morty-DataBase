@@ -1,0 +1,15 @@
+.Nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.8s;
+  font-family: sans-serif;
+}
+.Nav a:hover {
+  color: #009925;
+  cursor: pointer;
+}
+
+.Nav a:not(:last-child) {
+  margin-right: 15px;
+}

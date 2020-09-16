@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Character/Character.css';
 import { Link } from 'react-router-dom';
 
 export default class Episode extends React.Component {

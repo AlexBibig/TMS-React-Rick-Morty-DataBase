@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import Header from '../Header';
 import CharactersList from '../CharactersList';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
@@ -13,7 +13,7 @@ import MainPage from '../MainPage';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='App'>
+      <div className={`App ${styles.App}`}>
         <Header />
         <Switch>
           <Route path='/characters'>

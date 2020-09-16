@@ -1,0 +1,21 @@
+.CharactersList {
+  margin: 50px 20px;
+}
+.CharactersList h1 {
+  font-family: 'rick&morty_font', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ul {
+  list-style: none;
+}
+.CharactersList li {
+  display: inline-block;
+  width: calc(50% - 42px);
+  margin: 20px 20px;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 10px;
+}

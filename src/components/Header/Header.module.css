@@ -1,19 +1,21 @@
 .Header {
-  background-color: #fff;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 .nav_block {
   display: block;
 }
-.title_block p {
-  font-size: 40px;
-}
 .logo_link {
+  font-family: 'rick&morty_font', sans-serif;
   font-size: 40px;
-  font-weight: bold;
-  font-style: italic;
+  color: white;
   margin: 0;
   text-decoration: none;
+  transition: 0.8s;
+}
+.logo_link:hover {
+  color: #009925;
 }

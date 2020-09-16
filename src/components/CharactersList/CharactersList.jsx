@@ -1,5 +1,5 @@
 import React from 'react';
-import './CharactersList.css';
+import styles from './CharactersList.module.css';
 import Character from '../Character';
 import { connect } from 'react-redux';
 import Spinner from '../Spinner';
@@ -33,7 +33,7 @@ class CharactersList extends React.Component {
 
     return (
       <>
-        <div className='CharactersList'>
+        <div className={`CharactersList ${styles.CharactersList}`}>
           <h1>Characters</h1>
           <ul>{items}</ul>
         </div>

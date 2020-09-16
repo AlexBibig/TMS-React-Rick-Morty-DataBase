@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'rick&morty_font';
+  src: url('../../others/fonts/rick&morty_font/get-schwifty.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.App p {
+  margin-top: 0;
+}

@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/TMS-React-Rick-Morty-DataBase/static/css/main.537546ba.chunk.css",
-    "main.js": "/TMS-React-Rick-Morty-DataBase/static/js/main.cadfc50b.chunk.js",
-    "main.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/main.cadfc50b.chunk.js.map",
+    "main.css": "/TMS-React-Rick-Morty-DataBase/static/css/main.237399e2.chunk.css",
+    "main.js": "/TMS-React-Rick-Morty-DataBase/static/js/main.a2aaaf99.chunk.js",
+    "main.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/main.a2aaaf99.chunk.js.map",
     "runtime-main.js": "/TMS-React-Rick-Morty-DataBase/static/js/runtime-main.b8ead4e4.js",
     "runtime-main.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/runtime-main.b8ead4e4.js.map",
-    "static/js/2.06f3edc8.chunk.js": "/TMS-React-Rick-Morty-DataBase/static/js/2.06f3edc8.chunk.js",
-    "static/js/2.06f3edc8.chunk.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/2.06f3edc8.chunk.js.map",
+    "static/js/2.0f94e437.chunk.js": "/TMS-React-Rick-Morty-DataBase/static/js/2.0f94e437.chunk.js",
+    "static/js/2.0f94e437.chunk.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/2.0f94e437.chunk.js.map",
     "index.html": "/TMS-React-Rick-Morty-DataBase/index.html",
-    "precache-manifest.5090e860dee6088f2dca02f7a5297e29.js": "/TMS-React-Rick-Morty-DataBase/precache-manifest.5090e860dee6088f2dca02f7a5297e29.js",
+    "precache-manifest.fb6af954e81c4d99832076e7437a1962.js": "/TMS-React-Rick-Morty-DataBase/precache-manifest.fb6af954e81c4d99832076e7437a1962.js",
     "service-worker.js": "/TMS-React-Rick-Morty-DataBase/service-worker.js",
-    "static/css/main.537546ba.chunk.css.map": "/TMS-React-Rick-Morty-DataBase/static/css/main.537546ba.chunk.css.map",
-    "static/js/2.06f3edc8.chunk.js.LICENSE.txt": "/TMS-React-Rick-Morty-DataBase/static/js/2.06f3edc8.chunk.js.LICENSE.txt"
+    "static/css/main.237399e2.chunk.css.map": "/TMS-React-Rick-Morty-DataBase/static/css/main.237399e2.chunk.css.map",
+    "static/js/2.0f94e437.chunk.js.LICENSE.txt": "/TMS-React-Rick-Morty-DataBase/static/js/2.0f94e437.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/TMS-React-Rick-Morty-DataBase/static/media/get-schwifty.4b4420cf.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.b8ead4e4.js",
-    "static/js/2.06f3edc8.chunk.js",
-    "static/css/main.537546ba.chunk.css",
-    "static/js/main.cadfc50b.chunk.js"
+    "static/js/2.0f94e437.chunk.js",
+    "static/css/main.237399e2.chunk.css",
+    "static/js/main.a2aaaf99.chunk.js"
   ]
 }

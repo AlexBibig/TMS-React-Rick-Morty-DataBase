@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className={`Header ${styles.Header}`}>
       <div className='title_block'>
-        <Link className={styles.logo_link} to='/Main'>
+        <Link className={styles.logo_link} to='/TMS-React-Rick-Morty-DataBase/'>
           <img src={logo} alt='logo' />
         </Link>
       </div>

@@ -34,7 +34,7 @@ const App = () => {
           <Route path={`/location/:id`}>
             <LocationPage />
           </Route>
-          <Route path={`/Main`}>
+          <Route path={`/TMS-React-Rick-Morty-DataBase/`}>
             <MainPage />
           </Route>
         </Switch>

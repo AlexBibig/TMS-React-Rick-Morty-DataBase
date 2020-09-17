@@ -1,0 +1,15 @@
+.MainPage {
+  font-weight: bold;
+  text-align: center;
+}
+.MainPage h1 {
+  font-family: 'rick&morty_font', sans-serif;
+  font-size: 70px;
+  margin-top: 200px;
+  color: #009925;
+}
+.MainPage p {
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+}

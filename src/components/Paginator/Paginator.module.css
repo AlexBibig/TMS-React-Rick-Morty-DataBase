@@ -12,10 +12,14 @@
   border: none;
   border-radius: 15px;
   position: absolute;
+  transition: 0.8s;
 }
 .Paginator button:active,
 button:focus {
   outline: none;
+}
+.Paginator button:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .Paginator .prevBtn {

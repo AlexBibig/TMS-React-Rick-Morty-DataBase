@@ -1,10 +1,12 @@
 import React from 'react';
+import Spinner from '../Spinner';
+import styles from '../MainPage/MainPage.module.css';
 
 const MainPage = () => {
   return (
-    <div className='MainPage'>
-      <h1>RICK AND MORTY API</h1>
-      <p>On this page will be readme how to use this site</p>
+    <div className={`MainPage ${styles.MainPage}`}>
+      <h1>RICK AND MORTY DATABASE</h1>
+      <p>Select any TAB to see info</p>
     </div>
   );
 };

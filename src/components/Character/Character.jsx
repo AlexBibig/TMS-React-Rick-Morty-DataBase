@@ -17,7 +17,9 @@ export default class Character extends React.Component {
     return (
       <div className={`Character ${styles.Character}`}>
         <div className={`imgBlock ${styles.imgBlock}`}>
-          <img src={img} alt={name} />
+          <Link to={`/character/${id}`}>
+            <img src={img} alt={name} />
+          </Link>
         </div>
         <div className={`textBlock ${styles.textBlock}`}>
           <div className='titleBlock'>

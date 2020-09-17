@@ -1,7 +1,7 @@
-.CharactersList {
+.EpisodesList {
   padding: 50px 20px;
 }
-.CharactersList h1 {
+.EpisodesList h1 {
   font-family: 'rick&morty_font', sans-serif;
   font-size: 70px;
   font-weight: bold;
@@ -13,7 +13,7 @@
 ul {
   list-style: none;
 }
-.CharactersList li {
+.EpisodesList li {
   display: inline-block;
   width: calc(50% - 44px);
   margin: 20px 20px;

@@ -12,7 +12,7 @@ class LocationsList extends React.Component {
     const items = locations.map((item) => {
       return (
         <li key={item.id}>
-          <Location id={item.id} name={item.name} />
+          <Location id={item.id} name={item.name} type={item.type} dimension={item.dimension} />
         </li>
       );
     });

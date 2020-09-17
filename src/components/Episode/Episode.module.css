@@ -1,0 +1,25 @@
+.Episode .textBlock {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 10px;
+}
+
+.Episode .episode_name {
+  width: 62%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.Episode .episode_name a {
+  color: white;
+  text-decoration: none;
+  transition: 0.8s;
+}
+.Episode .episode_name a:hover {
+  color: #009925;
+  cursor: pointer;
+}
+.Episode p {
+  margin-bottom: 10px;
+  color: white;
+}

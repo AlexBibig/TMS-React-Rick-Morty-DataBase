@@ -1,7 +1,7 @@
-.CharactersList {
+.LocationsList {
   padding: 50px 20px;
 }
-.CharactersList h1 {
+.LocationsList h1 {
   font-family: 'rick&morty_font', sans-serif;
   font-size: 70px;
   font-weight: bold;
@@ -10,10 +10,10 @@
   margin-bottom: 60px;
   color: #009925;
 }
-ul {
+.LocationsList ul {
   list-style: none;
 }
-.CharactersList li {
+.LocationsList li {
   display: inline-block;
   width: calc(50% - 40px);
   margin: 20px 20px;

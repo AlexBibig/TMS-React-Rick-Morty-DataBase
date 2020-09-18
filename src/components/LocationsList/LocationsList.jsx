@@ -3,6 +3,7 @@ import Location from '../Location';
 import { connect } from 'react-redux';
 import Paginator from '../Paginator';
 import Spinner from '../Spinner';
+import styles from '../LocationsList/LocationsList.module.css';
 
 class LocationsList extends React.Component {
   render() {
@@ -23,7 +24,7 @@ class LocationsList extends React.Component {
 
     return (
       <>
-        <div className='LocationsList'>
+        <div className={`LocationsList ${styles.LocationsList}`}>
           <h1>Locations</h1>
           <ul>{items}</ul>
         </div>

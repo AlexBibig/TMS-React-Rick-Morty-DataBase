@@ -21,3 +21,8 @@ ul {
   /* border: 2px solid black; */
   border-radius: 10px;
 }
+@media (max-width: 990px) {
+  .EpisodesList li {
+    width: 100%;
+  }
+}

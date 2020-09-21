@@ -26,7 +26,7 @@ export default class Character extends React.Component {
             <p className={`name ${styles.name}`}>
               <Link to={`/character/${id}`}>{name}</Link>
             </p>
-            <div className='status'>
+            <div className={`status ${styles.status}`}>
               <p>
                 <span className={`${statusCircleClass} `}></span>
                 <span className='statusText'> {status}</span>

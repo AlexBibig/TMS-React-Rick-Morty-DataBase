@@ -1,13 +1,15 @@
 .CharacterPage {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
+  margin-top: 50px;
 }
 .CharacterPage .imageBlock {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .CharacterPage .imageBlock p {
   font-family: 'rick&morty_font', sans-serif;
@@ -18,8 +20,8 @@
 }
 
 .CharacterPage .infoBlock {
-  width: 55%;
-  padding: 100px 0;
+  width: 40%;
+  padding: 100px 100px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
@@ -27,15 +29,30 @@
   display: flex;
   margin-bottom: 10px;
 }
-.CharacterPage .infoBlock div * {
+.CharacterPage .infoBlock div span {
+  font-size: 20px;
   width: 50%;
+}
+.CharacterPage .infoBlock a {
+  color: #009925;
+  text-decoration: none;
+}
+.CharacterPage .infoBlock a:hover {
+  text-decoration: underline;
+}
+.CharacterPage .infoBlock div span {
+  font-style: italic;
+}
+.CharacterPage .infoBlock div span:last-child,
+.CharacterPage .infoBlock a {
+  font-weight: bold;
+  font-style: normal;
 }
 @media (max-width: 990px) {
   .CharacterPage {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
   .CharacterPage .imageBlock {
     width: 100%;
@@ -43,5 +60,13 @@
   }
   .CharacterPage .infoBlock {
     width: 100%;
+    padding: 100px 0px;
+    text-align: center;
+  }
+  .CharacterPage .infoBlock a {
+    text-decoration: underline;
+  }
+  .CharacterPage .infoBlock > div > span:first-child {
+    text-align: left;
   }
 }

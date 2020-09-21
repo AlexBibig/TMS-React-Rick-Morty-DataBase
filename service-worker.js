@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TMS-React-Rick-Morty-DataBase/precache-manifest.a3440ad35bfd90dc646829b0bc7d35a3.js"
+  "/TMS-React-Rick-Morty-DataBase/precache-manifest.d4494c77a731c37009b09db3c4beaa99.js"
 );
 
 self.addEventListener('message', (event) => {

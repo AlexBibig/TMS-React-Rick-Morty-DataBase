@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TMS-React-Rick-Morty-DataBase/static/css/main.15c36e97.chunk.css",
+    "main.css": "/TMS-React-Rick-Morty-DataBase/static/css/main.4939b665.chunk.css",
     "main.js": "/TMS-React-Rick-Morty-DataBase/static/js/main.877ab1c9.chunk.js",
     "main.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/main.877ab1c9.chunk.js.map",
     "runtime-main.js": "/TMS-React-Rick-Morty-DataBase/static/js/runtime-main.b8ead4e4.js",
@@ -8,9 +8,9 @@
     "static/js/2.e4640d9e.chunk.js": "/TMS-React-Rick-Morty-DataBase/static/js/2.e4640d9e.chunk.js",
     "static/js/2.e4640d9e.chunk.js.map": "/TMS-React-Rick-Morty-DataBase/static/js/2.e4640d9e.chunk.js.map",
     "index.html": "/TMS-React-Rick-Morty-DataBase/index.html",
-    "precache-manifest.74cbe5380207d50017a160cbc4721927.js": "/TMS-React-Rick-Morty-DataBase/precache-manifest.74cbe5380207d50017a160cbc4721927.js",
+    "precache-manifest.f31d95d5c0f9cf3b70e77915836b3def.js": "/TMS-React-Rick-Morty-DataBase/precache-manifest.f31d95d5c0f9cf3b70e77915836b3def.js",
     "service-worker.js": "/TMS-React-Rick-Morty-DataBase/service-worker.js",
-    "static/css/main.15c36e97.chunk.css.map": "/TMS-React-Rick-Morty-DataBase/static/css/main.15c36e97.chunk.css.map",
+    "static/css/main.4939b665.chunk.css.map": "/TMS-React-Rick-Morty-DataBase/static/css/main.4939b665.chunk.css.map",
     "static/js/2.e4640d9e.chunk.js.LICENSE.txt": "/TMS-React-Rick-Morty-DataBase/static/js/2.e4640d9e.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/TMS-React-Rick-Morty-DataBase/static/media/get-schwifty.4b4420cf.ttf",
     "static/media/rrick-morty-logo.jpg": "/TMS-React-Rick-Morty-DataBase/static/media/rrick-morty-logo.300f9ee6.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.b8ead4e4.js",
     "static/js/2.e4640d9e.chunk.js",
-    "static/css/main.15c36e97.chunk.css",
+    "static/css/main.4939b665.chunk.css",
     "static/js/main.877ab1c9.chunk.js"
   ]
 }

@@ -1,0 +1,70 @@
+.EpisodePage {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.EpisodePage .infoBlock {
+  height: fit-content;
+  width: 40%;
+  padding: 100px 100px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.EpisodePage .infoBlock div {
+  display: flex;
+  margin-bottom: 10px;
+}
+.EpisodePage .infoBlock div span {
+  font-size: 20px;
+  width: 50%;
+}
+.EpisodePage .infoBlock div span {
+  font-style: italic;
+}
+.EpisodePage .infoBlock div span:last-child,
+.EpisodePage .infoBlock a {
+  font-weight: bold;
+  font-style: normal;
+}
+.EpisodePage .listBlock {
+  width: 30%;
+}
+.EpisodePage .listBlock h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+.EpisodePage .listBlock li {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.EpisodePage .listBlock li a {
+  font-family: 'rick&morty_font', sans-serif;
+  text-decoration: none;
+  color: #009925;
+}
+
+@media (max-width: 990px) {
+  .EpisodePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .EpisodePage .listBlock {
+    width: 100%;
+  }
+  .EpisodePage .infoBlock {
+    padding: 50px 50px;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .EpisodePage .infoBlock > div > span:first-child {
+    width: 60%;
+    text-align: left;
+  }
+}

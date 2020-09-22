@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import EpisodePageCharacters from '../EpisodePageCharacters';
 import Spinner from '../Spinner';
+import styles from '../EpisodePage/EpisodePage.module.css';
 
 const EpisodePage = () => {
   const rickMortyApi = new Api();
@@ -37,12 +38,32 @@ const EpisodePage = () => {
   });
 
   return (
-    <div className='EpisodePage'>
-      <h1>{id}</h1>
-      <h1>{name}</h1>
-      <h1>{airDate}</h1>
-      <h1>{episode}</h1>
-      <ul>{items}</ul>
+    <div className={`EpisodePage ${styles.EpisodePage}`}>
+      <div className={`infoBlock ${styles.infoBlock}`}>
+        <div>
+          <span>Number: </span>
+          <span>{id}</span>
+        </div>
+        <div>
+          <span>Name: </span>
+          <span>{name}</span>
+        </div>
+        <div>
+          <span>Air date: </span>
+          <span>{airDate}</span>
+        </div>
+        <div>
+          <span>Designation:: </span>
+          <span>{episode}</span>
+        </div>
+      </div>
+
+      <div className={`listBlock ${styles.listBlock}`}>
+        <h2>List of characters from this episode:</h2>
+        <ul>
+          <li>{items}</li>
+        </ul>
+      </div>
     </div>
   );
 };

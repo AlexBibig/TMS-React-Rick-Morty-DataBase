@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Api from '../../API';
 import LocationPageResidents from '../LocationPageResidents';
 import Spinner from '../Spinner';
+import styles from '../LocationPage/LocationPage.module.css';
 
 const LocationPage = () => {
   const rickMortyApi = new Api();
@@ -37,12 +38,31 @@ const LocationPage = () => {
   });
 
   return (
-    <div className='LocationPage'>
-      <h1>{id}</h1>
-      <h1>{name}</h1>
-      <h1>{type}</h1>
-      <h1>{dimension}</h1>
-      <ul>{items}</ul>
+    <div className={`LocationPage ${styles.LocationPage}`}>
+      <div className={`infoBlock ${styles.infoBlock}`}>
+        <div>
+          <span>Number: </span>
+          <span>{id}</span>
+        </div>
+        <div>
+          <span>Name: </span>
+          <span>{name}</span>
+        </div>
+        <div>
+          <span>Type: </span>
+          <span>{type}</span>
+        </div>
+        <div>
+          <span>Dimension: </span>
+          <span>{dimension}</span>
+        </div>
+      </div>
+      <div className={`listBlock ${styles.listBlock}`}>
+        <h2>List of character who have been last seen in the location:</h2>
+        <ul>
+          <li>{items}</li>
+        </ul>
+      </div>
     </div>
   );
 };

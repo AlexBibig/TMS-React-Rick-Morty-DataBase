@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Api from '../../API';
+import styles from '../EpisodePageCharacters/EpisodePageCharacters.module.css';
 
 const EpisodePageCharacters = (props) => {
   const { characterUrl } = props;
@@ -17,9 +18,9 @@ const EpisodePageCharacters = (props) => {
   }, []);
 
   return (
-    <div className='EpisodePageCharacters'>
+    <div className={`EpisodePageCharacters ${styles.EpisodePageCharacters}`}>
       <Link to={`/character/${pageId}`}>
-        <h1>{character.name}</h1>
+        <h3>{character.name}</h3>
       </Link>
     </div>
   );

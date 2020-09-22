@@ -55,11 +55,11 @@
     align-items: center;
   }
   .CharacterPage .imageBlock {
-    width: 100%;
+    width: inherit;
     margin-bottom: 30px;
   }
   .CharacterPage .infoBlock {
-    width: 100%;
+    width: inherit;
     padding: 100px 0px;
     text-align: center;
   }

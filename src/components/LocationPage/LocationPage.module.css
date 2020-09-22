@@ -43,6 +43,7 @@
   margin-bottom: 15px;
 }
 .LocationPage .listBlock li a {
+  font-size: 10px;
   font-family: 'rick&morty_font', sans-serif;
   text-decoration: none;
   color: #009925;
@@ -55,11 +56,11 @@
     align-items: center;
   }
   .LocationPage .listBlock {
-    width: 100%;
+    width: inherit;
   }
   .LocationPage .infoBlock {
     padding: 50px 50px;
-    width: 100%;
+    width: inherit;
     text-align: right;
     margin-bottom: 30px;
   }

@@ -55,11 +55,11 @@
     align-items: center;
   }
   .EpisodePage .listBlock {
-    width: 100%;
+    width: inherit;
   }
   .EpisodePage .infoBlock {
     padding: 50px 50px;
-    width: 100%;
+    width: inherit;
     text-align: right;
     margin-bottom: 30px;
   }

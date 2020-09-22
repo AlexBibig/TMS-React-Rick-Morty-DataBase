@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37a257171bd34f5699e88b8cab10f9c5",
+    "revision": "3e51d8a805fd5799f48941e312f3cbf4",
     "url": "/TMS-React-Rick-Morty-DataBase/index.html"
   },
   {
-    "revision": "414292aa8aeffcd893c8",
-    "url": "/TMS-React-Rick-Morty-DataBase/static/css/main.f937a8b6.chunk.css"
+    "revision": "781a22741f24bc94126e",
+    "url": "/TMS-React-Rick-Morty-DataBase/static/css/main.15c36e97.chunk.css"
   },
   {
-    "revision": "bb0c744d92b8f0c0d753",
-    "url": "/TMS-React-Rick-Morty-DataBase/static/js/2.9d51a124.chunk.js"
+    "revision": "eececef027098343f9c7",
+    "url": "/TMS-React-Rick-Morty-DataBase/static/js/2.e4640d9e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/TMS-React-Rick-Morty-DataBase/static/js/2.9d51a124.chunk.js.LICENSE.txt"
+    "url": "/TMS-React-Rick-Morty-DataBase/static/js/2.e4640d9e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "414292aa8aeffcd893c8",
-    "url": "/TMS-React-Rick-Morty-DataBase/static/js/main.d0b8b9e9.chunk.js"
+    "revision": "781a22741f24bc94126e",
+    "url": "/TMS-React-Rick-Morty-DataBase/static/js/main.877ab1c9.chunk.js"
   },
   {
     "revision": "4b863eebf38825955b09",
